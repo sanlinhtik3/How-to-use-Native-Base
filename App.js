@@ -1,10 +1,16 @@
-import {Box, NativeBaseProvider, Text} from "native-base";
+import {Box, Heading, NativeBaseProvider, Text} from "native-base";
 
 const App = () => {
   return (
       <NativeBaseProvider>
-        <Box flex={1} bg="#fff" alignItems="center" justifyContent="center">
-          <Text fontSize={30} color={"#007bff"}>Open up App.js to start working on your app!</Text>
+        <Box flex={1} justifyContent={'center'} alignItems={'center'}>
+            <Heading size={'xs'}>xs</Heading>
+            <Heading size={'sm'}>sm</Heading>
+            <Heading size={'lg'}>lg</Heading>
+            <Heading size={'xl'}>xl</Heading>
+            <Heading size={'2xl'}>2xl</Heading>
+            <Heading size={'3xl'}>3xl</Heading>
+            <Heading size={'4xl'}>4xl</Heading>
         </Box>
       </NativeBaseProvider>
   )
