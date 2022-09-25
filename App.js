@@ -3,9 +3,15 @@ import {Box, NativeBaseProvider, Text} from "native-base";
 const App = () => {
   return (
       <NativeBaseProvider>
-          {/* Margin and Padding */}
+          {/* Typography */}
           <Box mt={10}>
-              <Text color={"pink.500"} bg="pink.100" p="10">Hello Color</Text>
+              <Text fontSize={'3xl'} fontWeight={'bold'}>Thank You</Text>
+              <Text lineHeight={'40'} letterSpacing={'5'}>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cum dicta doloremque ex labore laboriosam nobis odit perspiciatis qui quibusdam, quisquam quo repellat repudiandae saepe, sed temporibus tenetur ullam ut.
+              </Text>
+              <Text fontSize={'2xl'} textAlign={'left'}>Hello</Text>
+              <Text fontSize={'2xl'} textTransform={'uppercase'}>Text Transform</Text>
+              <Text fontSize={'2xl'} underline>Text Transform</Text>
           </Box>
       </NativeBaseProvider>
   )
